@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 300ms;
+}
+
+html {
+    font-family: 'Poppins';
+}
+
+body {
+    background: linear-gradient(
+        118deg,
+        var(--pink) 0%,
+        var(--blue) 100%
+    );
+    color: black;
+    font-size: 24px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+    font-size: 17px;
+}
+
+header p {
+    font-family: 'Comic Sans MS';
+}
+
+hr {
+    border: 1px dashed #000;
+    width: calc(100% / 3 + 30px);
+    margin: auto;
+    margin-top: 20px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.track-art {
+    margin: 25px;
+    height: 350px;
+    width: 350px;
+    background: url('young_girl_a.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+}
+
+.now-playing {
+    font-size: 1rem;
+}
+
+.track-name {
+    font-size: 3rem;
+}
+
+.track-artist {
+    font-size: 1.5rem;
+}
+
+.buttons {
+    font-size: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.playpause-track,
+.prev-track,
+.next-track {
+    padding: 25px;
+    opacity: 0.5;
+}
+
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+  opacity: 1.0;
+}
+
+.slider_container {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.seek_slider,
+.volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.seek_slider:hover,
+.volume_slider:hover {
+  opacity: 1.0;
+}
+ 
+.seek_slider {
+  width: 60%;
+}
+ 
+.volume_slider {
+  width: 30%;
+}
+ 
+.current-time,
+.total-duration {
+  padding: 10px;
+}
+ 
+i.bxs-volume-low,
+i.bxs-volume-full {
+  padding: 10px;
+}
+
+i.bx-play-circle,
+i.bx-pause-circle,
+i.bx-skip-previous,
+i.bx-skip-next {
+  cursor: pointer;
+}
+
+/*--------------------ANIMATIONS--------------------*/
